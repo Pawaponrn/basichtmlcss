@@ -14,6 +14,15 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 
 /* -----REUSEABLE COMPONENT----- */
 
@@ -96,6 +105,20 @@ h2:after {
     display: block;
     color: #e67e22;
     margin-bottom: 10px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+
+    /*make icon align with text*/
+    line-height: 120%; 
+    vertical-align: middle;
+    margin-top: -4px;
 }
 
 
@@ -240,4 +263,68 @@ header {
 .meals-photo img:hover {
     opacity: 1;
     transform: scale(1);
+}
+
+/* -----HOW IT WORKS----- */
+
+.section-steps {
+    background-color: #f4f4f4;
+}
+
+/*select the left on*/
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+/*select the right on*/
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 60px; /*more balance for mine*/
+}
+
+.works-step div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+
+}
+
+/* -----CITIES----- */
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
 }
